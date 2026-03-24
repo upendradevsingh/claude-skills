@@ -1,5 +1,5 @@
 ---
-name: reviewing-tests
+name: sdestack:review-tests
 description: Use when reviewing tests in a PR, auditing a test suite, or evaluating whether existing tests actually catch bugs — especially when test names claim coverage (tenant isolation, auth, persistence) but assertions may not back it up.
 ---
 

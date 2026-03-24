@@ -1,13 +1,15 @@
-# Claude Skills
+# SDE Stack — Claude Skills
 
-Language-agnostic testing skills for Claude Code. Principles are universal; code examples are loaded per-language (Python, Java, Node.js/TypeScript).
+**Software Development Engineering Stack** — language-agnostic skills for Claude Code. Principles are universal; code examples are loaded per-language (Python, Java, Node.js/TypeScript).
+
+All skills use the `sdestack:` namespace for easy identification among other installed skills.
 
 ## Skills
 
-| Skill | Description |
-|-------|-------------|
-| **writing-effective-tests** | Combines TDD process (RED-GREEN-REFACTOR) with test craft (type selection, mocking boundaries, naming, testability patterns). Language-specific examples loaded automatically. |
-| **reviewing-tests** | Reviewer-focused skill — catches bad tests, overcomes reviewer biases (Green Bar, Coverage Number, Mock Confidence), and systematically evaluates test suites. |
+| Skill | Invoke As | Description |
+|-------|-----------|-------------|
+| **write-effective-tests** | `sdestack:write-effective-tests` | TDD process + test craft — type selection, mocking boundaries, naming, testability patterns |
+| **review-tests** | `sdestack:review-tests` | Reviewer-focused — catches bad tests, overcomes reviewer biases, evaluates test suites critically |
 
 ## Supported Languages
 
@@ -51,8 +53,8 @@ The `install.sh` script creates symlinks from `~/.claude/skills/<skill-name>` to
 
 ```
 ~/.claude/skills/
-    writing-effective-tests -> /path/to/claude-skills/skills/writing-effective-tests/
-    reviewing-tests -> /path/to/claude-skills/skills/reviewing-tests/
+    write-effective-tests -> /path/to/claude-skills/skills/write-effective-tests/
+    review-tests -> /path/to/claude-skills/skills/review-tests/
 ```
 
 ## Adding a New Skill
@@ -60,7 +62,7 @@ The `install.sh` script creates symlinks from `~/.claude/skills/<skill-name>` to
 1. Create `skills/<skill-name>/SKILL.md` with frontmatter:
    ```yaml
    ---
-   name: skill-name
+   name: sdestack:<skill-name>
    description: Use when [triggering conditions]
    ---
    ```

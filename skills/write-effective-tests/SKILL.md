@@ -1,5 +1,5 @@
 ---
-name: writing-effective-tests
+name: sdestack:write-effective-tests
 description: Use when writing tests for any codebase, deciding what type of test to write (unit/integration/E2E), choosing what to mock, fixing flaky or brittle tests, or implementing a bug fix that needs a regression test first.
 ---
 

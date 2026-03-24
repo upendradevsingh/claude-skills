@@ -10,9 +10,9 @@ Skills encode language-agnostic principles (mock at boundaries, use real databas
 skills/<skill-name>/examples/<language>.md
 ```
 
-Examples: `skills/writing-effective-tests/examples/go.md`, `skills/reviewing-tests/examples/rust.md`
+Examples: `skills/write-effective-tests/examples/go.md`, `skills/review-tests/examples/rust.md`
 
-## Template: `writing-effective-tests` Examples
+## Template: `write-effective-tests` Examples
 
 Cover these sections in order, matching the structure of the main `SKILL.md`:
 
@@ -57,7 +57,7 @@ Each section follows this format:
 One or two sentences explaining why the right approach is better.
 ````
 
-## Template: `reviewing-tests` Examples
+## Template: `review-tests` Examples
 
 Cover these four topics, same WRONG/RIGHT/explanation format:
 
