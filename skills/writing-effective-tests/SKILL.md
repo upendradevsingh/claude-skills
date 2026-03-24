@@ -1,6 +1,6 @@
 ---
 name: writing-effective-tests
-description: Use when writing tests for any codebase — combines TDD process (test first, watch it fail, minimal code) with test craft (type selection, mocking boundaries, naming, testability patterns). Also use when reviewing test quality, deciding what to test, or fixing flaky/brittle test suites.
+description: Use when writing tests for any codebase, deciding what type of test to write (unit/integration/E2E), choosing what to mock, fixing flaky or brittle tests, or implementing a bug fix that needs a regression test first.
 ---
 
 # Writing Effective Tests

@@ -1,6 +1,6 @@
 ---
 name: reviewing-tests
-description: Use when reviewing test quality in a PR or codebase audit — applies a critical reviewer mindset to catch anti-patterns, false confidence, and the cognitive biases that cause reviewers to accept bad tests. The inverse of writing-effective-tests.
+description: Use when reviewing tests in a PR, auditing a test suite, or evaluating whether existing tests actually catch bugs — especially when test names claim coverage (tenant isolation, auth, persistence) but assertions may not back it up.
 ---
 
 # Reviewing Tests
