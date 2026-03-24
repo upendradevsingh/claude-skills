@@ -1,13 +1,23 @@
 # Claude Skills
 
-Custom skills for Claude Code that integrate TDD process with test craft, and provide a reviewer's checklist for catching test anti-patterns.
+Language-agnostic testing skills for Claude Code. Principles are universal; code examples are loaded per-language (Python, Java, Node.js/TypeScript).
 
 ## Skills
 
 | Skill | Description |
 |-------|-------------|
-| **writing-effective-tests** | Combines TDD process (RED-GREEN-REFACTOR) with test craft (type selection, mocking boundaries, naming, testability patterns). Covers unit, integration, and E2E testing with real-world anti-patterns from code reviews. |
-| **reviewing-tests** | Reviewer-focused skill that inverts the writing perspective — teaches how to catch bad tests, overcome reviewer biases (Green Bar, Coverage Number, Volume, Mock Confidence), and systematically evaluate test suites. |
+| **writing-effective-tests** | Combines TDD process (RED-GREEN-REFACTOR) with test craft (type selection, mocking boundaries, naming, testability patterns). Language-specific examples loaded automatically. |
+| **reviewing-tests** | Reviewer-focused skill — catches bad tests, overcomes reviewer biases (Green Bar, Coverage Number, Mock Confidence), and systematically evaluates test suites. |
+
+## Supported Languages
+
+| Language | Test Framework | Mocking | DB Testing | API Testing |
+|----------|---------------|---------|------------|-------------|
+| Python | pytest | unittest.mock | Testcontainers + SQLAlchemy | httpx TestClient |
+| Java | JUnit 5 | Mockito | Testcontainers + Spring | MockMvc |
+| Node.js/TS | Jest, Vitest | jest.mock, vi.mock | Testcontainers | supertest |
+
+Adding a new language? See [GENERATION-GUIDE.md](GENERATION-GUIDE.md).
 
 ## Install
 
